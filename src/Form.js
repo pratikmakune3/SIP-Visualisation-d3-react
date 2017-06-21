@@ -37,7 +37,7 @@ class Form extends Component {
       return_amount = (amount + return_amount) + (amount + return_amount)*(rate/100);
       returns_arr.push(return_amount);
     }
-    console.log(returns_arr);
+
     this.props.setData_chart(returns_arr);
   }
 
@@ -45,6 +45,7 @@ class Form extends Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
+
           <label>
             Monthly Investment Amount (Rs.):
             <input type="text" name='amount_per_month' onChange={this.handleInputChange} />
@@ -63,6 +64,7 @@ class Form extends Component {
           </label>
 
           <input type="submit" value="Submit" />
+          
         </form>
       </div>
     );

@@ -22,12 +22,8 @@ class Chart extends Component {
   renderChart(data) {
 
     var dataArray = data;
-
-    console.log('dataArray length ',dataArray.length);
-
     var dataArray_min = d3.min(dataArray);
     var dataArray_max = d3.max(dataArray);
-
     var width = 440;
 
     var scaleHeight = d3.scaleLinear()
